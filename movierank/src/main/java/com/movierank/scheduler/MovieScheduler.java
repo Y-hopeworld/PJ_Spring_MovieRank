@@ -20,7 +20,7 @@ public class MovieScheduler {
 	MovieService mService;
 
 
-	@Scheduled(cron = "0 17 15 * * *")
+	@Scheduled(cron = "0 31 11 * * *")
 	public void movieCollect() throws IOException {
 		log.info(">>>>> Movie ticketrank Collect:)");
 		mService.ticketRank();
